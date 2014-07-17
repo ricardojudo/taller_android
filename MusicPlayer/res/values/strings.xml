@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MusicPlayer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="rewind">Rebobinar</string>
+    <string name="previous">Anterior</string>
+    <string name="next">next</string>
+    <string name="fast_forward">fast_forward</string>
+    <string name="fuck">fuck</string>
+    <string name="cero">0</string>
+
+</resources>

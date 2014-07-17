@@ -1,0 +1,47 @@
+package com.example.intents;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.TextView;
+
+public class LanzadaActivity extends Activity {
+
+	private static final String LOG_CAT_TAG="Lanzada";
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_lanzada);
+		Bundle extras=getIntent().getExtras();
+		String cadena=extras.getString("cadena");
+		
+		TextView textView=(TextView) findViewById(R.id.message);
+		textView.setText(cadena);
+	}
+	
+	@Override
+	protected void onStart() {
+		Log.d(LOG_CAT_TAG, "Fuck U");
+	}
+	
+	@Override
+	protected void onStop() {
+	}
+	
+	@Override
+	protected void onRestart() {
+	}
+	
+	@Override
+	protected void onResume() {
+	}
+	
+	@Override
+	protected void onDestroy() {
+	}
+	
+	@Override
+	protected void onPause() {
+	}
+}

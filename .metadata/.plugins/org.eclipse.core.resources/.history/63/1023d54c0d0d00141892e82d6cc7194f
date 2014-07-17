@@ -1,0 +1,33 @@
+package com.example.musicplayer;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.example.musicplayer.model.Tune;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+
+public class MainActivity extends Activity {
+
+	List<Tune> tunes;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		tunes=new ArrayList<Tune>();
+		tunes.add(new Tune("3.01",R.drawable.fuck_me_too));
+		tunes.add(new Tune("3.01",R.drawable.alien_vampires));
+		tunes.add(new Tune("3.01",R.drawable.fuck_me_too));
+		
+	}
+	
+	public void nextTune(View view){
+		
+	}
+	
+	
+}

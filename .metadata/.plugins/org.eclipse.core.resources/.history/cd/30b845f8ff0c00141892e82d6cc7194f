@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <ImageButton
+            android:id="@+id/image_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_previous" 
+            android:contentDescription="@string/previous"/>
+
+        <ImageButton
+            android:id="@+id/image_rew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_rew" 
+            android:contentDescription="@string/rewind"/>
+        
+        
+        <ImageButton
+            android:id="@+id/image_ff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_ff" 
+            android:contentDescription="@string/fast_forward"/>
+        
+        
+        <ImageButton
+            android:id="@+id/image_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_next" 
+            android:contentDescription="@string/next"/>
+    </LinearLayout>
+
+</RelativeLayout>

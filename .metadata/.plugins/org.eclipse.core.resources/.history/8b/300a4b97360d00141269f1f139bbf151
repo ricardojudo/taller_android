@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Intents</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_lanzada">LanzadaActivity</string>
+    <string name="title_activity_promp">PrompActivity</string>
+    <string name="write_message">Escribe modafoquer</string>
+
+</resources>

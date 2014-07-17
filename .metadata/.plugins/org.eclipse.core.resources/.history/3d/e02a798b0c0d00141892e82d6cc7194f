@@ -1,0 +1,28 @@
+package com.example.musicplayer.model;
+
+public class Sing {
+	private String minutes;
+	private String image;
+
+	public Sing(String minutes, String image) {
+		this.minutes = minutes;
+		this.image = image;
+	}
+
+	public String getMinutes() {
+		return minutes;
+	}
+
+	public void setMinutes(String minutes) {
+		this.minutes = minutes;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
+}

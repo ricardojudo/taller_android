@@ -1,0 +1,9 @@
+INDEX VERSION 1.126+/home/ricardo/workspace_adt/.metadata/.plugins/org.eclipse.jdt.core
+3664778611.index
+3554133945.index
+1270315800.index
+2671050133.index
+239148604.index
+1308487718.index
+1457601100.index
+411336246.index

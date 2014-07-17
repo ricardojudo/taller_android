@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <ImageView
+        android:id="@+id/album"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:contentDescription="@string/fuck"
+        android:src="@drawable/abc_ic_clear_holo_light" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/image_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/previous"
+                android:src="@android:drawable/ic_media_previous" android:onClick="prevTune"/>
+
+            <ImageButton
+                android:id="@+id/image_rew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/rewind"
+                android:src="@android:drawable/ic_media_rew" />
+
+            <ToggleButton
+                android:id="@+id/image_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/check"
+                android:textOff=""
+                android:textOn="" />
+
+            <ImageButton
+                android:id="@+id/image_ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/fast_forward"
+                android:src="@android:drawable/ic_media_ff" />
+
+            <ImageButton
+                android:id="@+id/image_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/next"
+                android:src="@android:drawable/ic_media_next" 
+                android:onClick="nextTune"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cero" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

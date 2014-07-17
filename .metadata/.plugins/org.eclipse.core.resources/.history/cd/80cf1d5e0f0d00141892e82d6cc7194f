@@ -1,0 +1,50 @@
+package com.example.musicplayer;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.example.musicplayer.model.Tune;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+
+public class MainActivity extends Activity {
+
+	private List<Tune> tunes;
+	
+	private ImageView album;
+	
+	private Integer currentIndexTune=null;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		tunes=new ArrayList<Tune>();
+		tunes.add(new Tune("3.01",R.drawable.fuck_me_too));
+		tunes.add(new Tune("3.01",R.drawable.alien_vampires));
+		tunes.add(new Tune("3.01",R.drawable.grendel));
+		
+		album=(ImageView)findViewById(R.id.album);
+	}
+	
+	public void nextTune(View view){
+		if(currentIndexTune==null){
+			currentIndexTune=0;
+		}
+		
+		if(currentIndexTune == tunes.size()){
+			currentIndexTune=0;
+		}else{
+			currentIndexTune++;
+		}
+		
+		Tune tune=tunes.get(currentIndexTune);
+		album.setImageResource(tune.getImage());
+	}
+	
+	
+}
